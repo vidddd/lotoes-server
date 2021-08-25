@@ -2,10 +2,9 @@
 from configparser import ConfigParser
 
 
-def config(filename='config/database.ini', section='postgresql'):
-    # create a parser
+def config(section='postgresql'):
+    filename = 'config/config.ini'
     parser = ConfigParser()
-    # read config file
     parser.read(filename)
 
     # get section, default to postgresql

@@ -1,0 +1,1 @@
+docker run --name lotoes-server -p 5432:5432 -e POSTGRES_DB=lotoes-server -e POSTGRES_PASSWORD=deivid -d postgres
