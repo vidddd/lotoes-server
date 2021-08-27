@@ -1,6 +1,5 @@
+#!/usr/bin/python
 from api import db
-from api import User
 
+db.drop_all()
 db.create_all()
-
-

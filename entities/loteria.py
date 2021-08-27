@@ -1,10 +1,12 @@
-# coding=utf-8
+#!/usr/bin/python
+from api import db
 
-from sqlalchemy import Column, String, Integer, DateTime
 
-class Loteria():
-    id = Column(Integer, primary_key=True)
-    public_id = Column(String(50), unique=True)
-    name = db.Column(db.String(50))
-    password = db.Column(db.String(80))
-    admin = db.Column(db.Boolean)
+class Loteria(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nombre = db.Column(db.String(50))
+    direccion = db.Column(db.String(50))
+    cp = db.Column(db.Integer)
+    localidad = db.Column(db.String(100))
+    complete = db.Column(db.Boolean)
+    user_id = db.Column(db.Integer)

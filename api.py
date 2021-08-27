@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-from config import config
+from configload import config
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -21,24 +21,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
-from entities import Result
-
-class User(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    public_id = db.Column(db.String(50), unique=True)
-    name = db.Column(db.String(50))
-    password = db.Column(db.String(80))
-    admin = db.Column(db.Boolean)
-
-
-class Loteria(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nombre = db.Column(db.String(50))
-    direccion = db.Column(db.String(50))
-    localidad = db.Column(db.String(100))
-    complete = db.Column(db.Boolean)
-    user_id = db.Column(db.Integer)
-
+from entities import *
 
 @app.route('/')
 def index():
