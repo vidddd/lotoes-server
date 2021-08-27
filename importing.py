@@ -2,6 +2,7 @@ from configload import config
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from config.data import importadores
+from datetime import datetime
 
 params_postgres = config()
 
@@ -15,6 +16,11 @@ DATABASE_CONNECTION = f'postgresql://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}'
 engine = create_engine(DATABASE_CONNECTION)
 conn = engine.connect()
 
+today = datetime.today().strftime('%Y%m%d')
+
+for importer in importadores:
+    url = importer.get('url')
+    print(url)
 
 select_importers = 'SELECT * FROM importer'
 result = conn.execute(select_importers)
