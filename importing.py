@@ -1,36 +1,22 @@
-from configload import config
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from config.data import importadores
-from datetime import datetime
 
-params_postgres = config()
+from functions.get_conn import get_conn_db
+from config.data import importadores_lista
+from entities.importer import *
 
-HOST = params_postgres["host"]
-DATABASE = params_postgres["database"]
-USERNAME = params_postgres["user"]
-PASSWORD = params_postgres["password"]
 
-DATABASE_CONNECTION = f'postgresql://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}'
+# retur a engine object
+engine = get_conn_db()
 
-engine = create_engine(DATABASE_CONNECTION)
-conn = engine.connect()
+delete_importers = 'DELETE  FROM importer'
+result = engine.execute(delete_importers)
 
-today = datetime.today().strftime('%Y%m%d')
-
-for importer in importadores:
-    url = importer.get('url')
-    print(url)
+query="INSERT INTO importer (name ,name_system ,active ,sorteo_type,url,param_fecha,dias)  VALUES(%s,%s,%s,%s,%s,%s,%s)"
+id=engine.execute(query,importadores_lista)
+print("Rows Added  = ",id.rowcount)
+    
 
 select_importers = 'SELECT * FROM importer'
-result = conn.execute(select_importers)
+result = engine.execute(select_importers)
 
 for row in result:
     print(row)
-
-'''
-print(engine.table_names())
-Session = sessionmaker(bind=engine)
-
-print(params_postgres)
-'''

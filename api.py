@@ -17,11 +17,11 @@ DATABASE_CONNECTION = f'postgresql://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}'
 
 app.config["SECRET_KEY"] = SECRET_KEY
 app.config["SQLALCHEMY_DATABASE_URI"] = DATABASE_CONNECTION
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db = SQLAlchemy(app)
 
-from entities import *
+from entities.user import *
 
 @app.route('/')
 def index():
@@ -30,6 +30,13 @@ def index():
 
 @app.route('/user', methods=['GET'])
 def get_all_users():
+    users = User.query.all()
+    output = []
+    for user in users:
+        user_data = {}
+        user_data['public_id'] = user.public_id
+        user_data['name'] = user.name
+
     return ''
 
 

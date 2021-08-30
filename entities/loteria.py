@@ -8,5 +8,6 @@ class Loteria(db.Model):
     direccion = db.Column(db.String(50))
     cp = db.Column(db.Integer)
     localidad = db.Column(db.String(100))
+    telefono = db.Column(db.String(50))
     complete = db.Column(db.Boolean)
     user_id = db.Column(db.Integer)

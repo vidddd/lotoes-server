@@ -1,5 +1,4 @@
 from api import db
-from sqlalchemy.dialects.postgresql import JSON
 
 
 class Importer(db.Model):
@@ -12,9 +11,9 @@ class Importer(db.Model):
     url = db.Column(db.String())
     param_fecha = db.Column(db.Boolean)
     dias = db.Column(db.Integer)
-    result = db.Column(JSON)
 
-    def __init__(self, name, name_system, active, sorteo_type, url, param_fecha, dias, result):
+
+    def __init__(self, name, name_system, active, sorteo_type, url, param_fecha, dias):
         self.name = name
         self.name_system = name_system
         self.active = active
@@ -22,7 +21,6 @@ class Importer(db.Model):
         self.url = url
         self.param_fecha = param_fecha
         self.dias = dias
-        self.result = result
 
     def __repr__(self):
         return '<id {}>'.format(self.id)

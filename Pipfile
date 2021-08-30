@@ -12,6 +12,7 @@ flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-script = "*"
 requests = "*"
+flask-script-extras = "*"
 
 [dev-packages]
 
