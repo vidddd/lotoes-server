@@ -1,0 +1,207 @@
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+1138701210
+No se ha encontrado ningún registro para los parámetros introducidos.
+Add
+Traceback (most recent call last):
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1771, in _execute_context
+    self.dialect.do_execute(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.ProgrammingError: can't adapt type 'dict'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "cron.py", line 43, in <module>
+    su = Sorteo.query.filter_by(id_sorteo=sorteo.get('id_sorteo')).first() 
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2762, in first
+    return self.limit(1)._iter().first()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2846, in _iter
+    result = self.session.execute(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1637, in execute
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 292, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2204, in _autoflush
+    util.raise_(e, with_traceback=sys.exc_info()[2])
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2193, in _autoflush
+    self.flush()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3298, in flush
+    self._flush(objects)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3438, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3398, in _flush
+    flush_context.execute()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1219, in _emit_insert_statements
+    result = connection._execute_20(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1583, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1452, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1995, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1771, in _execute_context
+    self.dialect.do_execute(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/default.py", line 717, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.ProgrammingError) can't adapt type 'dict'
+[SQL: INSERT INTO sorteo (fecha_sorteo, dia_semana, id_sorteo, game_id, anyo, premio_bote, cdc, apuestas, recaudacion, combinacion, premios, fondo_bote, escrutinio) VALUES (%(fecha_sorteo)s, %(dia_semana)s, %(id_sorteo)s, %(game_id)s, %(anyo)s, %(premio_bote)s, %(cdc)s, %(apuestas)s, %(recaudacion)s, %(combinacion)s, %(premios)s, %(fondo_bote)s, %(escrutinio)s) RETURNING sorteo.id]
+[parameters: {'fecha_sorteo': '2021-09-02 21:00:00', 'dia_semana': 'jueves', 'id_sorteo': '1138709069', 'game_id': 'LNAC', 'anyo': '2021', 'premio_bote': '0', 'cdc': '11387', 'apuestas': '0', 'recaudacion': '0', 'combinacion': {'primer_premio': None, 'segundo_premio': None, 'fraccion': None, 'serie': None}, 'premios': '0', 'fondo_bote': '0', 'escrutinio': 'null'}]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+1138909070
+No se ha encontrado ningún registro para los parámetros introducidos.
+1138901212
+No se ha encontrado ningún registro para los parámetros introducidos.
+1138904071
+No se ha encontrado ningún registro para los parámetros introducidos.
+1138802071
+1138305035
+1138307049
+Traceback (most recent call last):
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1751, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 962, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "sorteo_id_sorteo_key"
+DETAIL:  Key (id_sorteo)=(1139006043) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "cron.py", line 49, in <module>
+    su = Sorteo.query.filter_by(id_sorteo=sorteo.get('id_sorteo')).first() 
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2762, in first
+    return self.limit(1)._iter().first()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2846, in _iter
+    result = self.session.execute(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1637, in execute
+    ) = compile_state_cls.orm_pre_session_exec(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/context.py", line 292, in orm_pre_session_exec
+    session._autoflush()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2204, in _autoflush
+    util.raise_(e, with_traceback=sys.exc_info()[2])
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 2193, in _autoflush
+    self.flush()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3298, in flush
+    self._flush(objects)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3438, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 3398, in _flush
+    flush_context.execute()
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 456, in execute
+    rec.execute(self)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/unitofwork.py", line 630, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 242, in save_obj
+    _emit_insert_statements(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/orm/persistence.py", line 1153, in _emit_insert_statements
+    c = connection._execute_20(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1583, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/sql/elements.py", line 323, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1452, in _execute_clauseelement
+    ret = self._execute_context(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1814, in _execute_context
+    self._handle_dbapi_exception(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1995, in _handle_dbapi_exception
+    util.raise_(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/util/compat.py", line 207, in raise_
+    raise exception
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/engine/base.py", line 1751, in _execute_context
+    self.dialect.do_executemany(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 962, in do_executemany
+    context._psycopg2_fetched_rows = xtras.execute_values(
+  File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/psycopg2/extras.py", line 1270, in execute_values
+    cur.execute(b''.join(parts))
+sqlalchemy.exc.IntegrityError: (raised as a result of Query-invoked autoflush; consider using a session.no_autoflush block if this flush is occurring prematurely)
+(psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "sorteo_id_sorteo_key"
+DETAIL:  Key (id_sorteo)=(1139006043) already exists.
+
+[SQL: INSERT INTO sorteo (fecha_sorteo, dia_semana, id_sorteo, game_id, anyo, premio_bote, cdc, apuestas, recaudacion, combinacion, combinacion_json, premios, fondo_bote, escrutinio) VALUES (%(fecha_sorteo)s, %(dia_semana)s, %(id_sorteo)s, %(game_id)s, %(anyo)s, %(premio_bote)s, %(cdc)s, %(apuestas)s, %(recaudacion)s, %(combinacion)s, %(combinacion_json)s, %(premios)s, %(fondo_bote)s, %(escrutinio)s) RETURNING sorteo.id]
+[parameters: ({'fecha_sorteo': '2021-09-05 00:00:00', 'dia_semana': 'domingo', 'id_sorteo': '1139006043', 'game_id': 'LAQU', 'anyo': '2021', 'premio_bote': '0', 'cdc': '11390', 'apuestas': '0', 'recaudacion': None, 'combinacion': None, 'combinacion_json': '"null"', 'premios': '0', 'fondo_bote': '0', 'escrutinio': '[]'}, {'fecha_sorteo': '2021-09-05 00:00:00', 'dia_semana': 'domingo', 'id_sorteo': '1139006043', 'game_id': 'LAQU', 'anyo': '2021', 'premio_bote': '0', 'cdc': '11390', 'apuestas': '0', 'recaudacion': None, 'combinacion': None, 'combinacion_json': '"null"', 'premios': '0', 'fondo_bote': '0', 'escrutinio': '[]'}, {'fecha_sorteo': '2021-09-05 00:00:00', 'dia_semana': 'domingo', 'id_sorteo': '1139007050', 'game_id': 'QGOL', 'anyo': '2021', 'premio_bote': '25000', 'cdc': '11390', 'apuestas': '0', 'recaudacion': None, 'combinacion': None, 'combinacion_json': '"null"', 'premios': '0', 'fondo_bote': '17833', 'escrutinio': '[]'})]
+(Background on this error at: https://sqlalche.me/e/14/gkpj)
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+

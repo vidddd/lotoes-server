@@ -26,7 +26,8 @@ migrate = Migrate(app, db)  # Initializing migrate.
 from entities.user import *
 from entities.loteria import *
 from entities.importer import *
-from entities.sorteo import *
+
+# tiene datos !!!!  from entities.sorteo import *
 
 db.init_app(app)
 migrate.init_app(app, db)

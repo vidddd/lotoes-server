@@ -1,3 +1,4 @@
+#!/usr/bin/python
 from flask import Flask, request, jsonify
 from configload import config
 from flask_sqlalchemy import SQLAlchemy
