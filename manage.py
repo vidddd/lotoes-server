@@ -10,8 +10,6 @@ params_postgres = config()
 
 HOST = params_postgres["host"]
 DATABASE = params_postgres["database"]
-USERNAME = params_postgres["user"]
-PASSWORD = params_postgres["password"]
 
 DATABASE_CONNECTION = f'postgresql://{USERNAME}:{PASSWORD}@{HOST}/{DATABASE}'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
@@ -27,7 +25,7 @@ from entities.user import *
 from entities.loteria import *
 from entities.importer import *
 
-# tiene datos !!!!  from entities.sorteo import *
+from entities.sorteo import *
 
 db.init_app(app)
 migrate.init_app(app, db)

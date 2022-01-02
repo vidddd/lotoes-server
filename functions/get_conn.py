@@ -37,3 +37,10 @@ def exists_sorteo(db, sorteo_id):
     if res:
         return False
     else: return True
+    
+def get_sorteo_id_bbdd(db,sorteo_id):
+    sql = text("SELECT s.id FROM sorteo s WHERE s.id_sorteo="+sorteo_id)
+    res = db.session.execute(sql).fetchone()
+    if res:
+        return res[0]
+    else: return false
