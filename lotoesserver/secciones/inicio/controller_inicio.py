@@ -6,7 +6,7 @@ BP_NM = 'inicio'
 inicio = Blueprint(BP_NM, __name__, template_folder='templates')
  
 @inicio.route('/')
-@login_required
+#@login_required
 def inicio_func():
     return render_template('inicio.html', seccion="inicio")
 

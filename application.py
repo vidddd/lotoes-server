@@ -16,4 +16,4 @@ env = "dev"
 app = application.create_app(env)
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=6031, debug=True)
+    app.run(host="0.0.0.0", port=5032, debug=True)
