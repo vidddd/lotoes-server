@@ -1,4 +1,4 @@
-from api import db
+from lotoesserver import db
 
 
 class Importer(db.Model):

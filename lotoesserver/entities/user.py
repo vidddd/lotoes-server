@@ -1,9 +1,9 @@
 #!/usr/bin/python
-from api import db
+from lotoesserver import db
 from datetime import datetime
 
 
-class User(db.Model):
+class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     public_id = db.Column(db.String(50), unique=True)
     name = db.Column(db.String(50))

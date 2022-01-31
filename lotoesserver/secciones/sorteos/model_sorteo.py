@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from api import db
+from lotoesserver import db
 from sqlalchemy.dialects.postgresql import JSON
 
 class Sorteo(db.Model):
@@ -45,13 +45,25 @@ class Sorteo(db.Model):
         return Sorteo.query.get(id)
     
     @staticmethod
+    def exists(id_sorteo):
+        result = Sorteo.query.filter(Sorteo.id_sorteo == id_sorteo)
+        if result:
+            for sorteo in result:
+                return sorteo.id
+        else: return False
+    
+    @staticmethod
     def get_by_id_sorteo(id_sorteo):
         return Sorteo.query.get(id_sorteo)
     
     def delete(self):
         db.session.delete(self)
         db.session.commit()
-
+        
+    @staticmethod
+    def all_paginated(page=1, per_page=20):
+        return Sorteo.query.order_by(Sorteo.id.desc()).\
+            paginate(page=page, per_page=per_page, error_out=False)
 
 class LoteriaNacionalCombinacion(db.Model):
     #__tablename__ = 'loteria_nacional_combinacion'

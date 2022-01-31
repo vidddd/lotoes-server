@@ -3434,3 +3434,165 @@ Traceback (most recent call last):
   File "/home/vid/.local/share/virtualenvs/lotoes-server-e9LUELRz/lib/python3.8/site-packages/sqlalchemy/dialects/postgresql/psycopg2.py", line 980, in do_executemany
     cursor.executemany(statement, parameters)
 IndexError: tuple index out of range
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from importing.get_data import get_sorteos_fecha
+  File "/home/vid/PHP/lotoes-server/importing.py", line 4, in <module>
+    from entities.importer import *
+ModuleNotFoundError: No module named 'entities'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from importing.get_data import get_sorteos_fecha
+  File "/home/vid/PHP/lotoes-server/importing.py", line 4, in <module>
+    from entities.importer import *
+ModuleNotFoundError: No module named 'entities'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from importing.get_data import get_sorteos_fecha
+  File "/home/vid/PHP/lotoes-server/importing.py", line 4, in <module>
+    from lotoesserver.entities.importer import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import Sorteo
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+Traceback (most recent call last):
+  File "cron.py", line 4, in <module>
+    from lotoesserver.secciones.sorteos.model_sorteo import *
+  File "/home/vid/PHP/lotoes-server/lotoesserver/__init__.py", line 5, in <module>
+    from flask_login import LoginManager
+ModuleNotFoundError: No module named 'flask_login'
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153609008 sábado LNAC
+update 1153801026 lunes BONO
+update 1154001028 miércoles BONO
+update 1153601025 sábado BONO
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153604009 sábado LAPR
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153502008 viernes EMIL
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153705005 domingo ELGR
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153706007 domingo LAQU
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153707007 domingo QGOL
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153703005 domingo LOTU
+No se ha encontrado ningún registro para los parámetros introducidos.
+update 1153708005 domingo QUPL
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+No se ha encontrado ningún registro para los parámetros introducidos.
+Error - update 1153609008 sábado LNAC
+duplicate key value violates unique constraint "loteria_nacional_combinacion_sorteo_id_key"
+DETAIL:  Key (sorteo_id)=(55) already exists.
+
+Traceback (most recent call last):
+  File "cron.py", line 38, in <module>
+    sorteo_id = Sorteo.exists(sorteo.get('id_sorteo'))
+  File "/home/vid/PHP/lotoes-server/lotoesserver/secciones/sorteos/model_sorteo.py", line 51, in exists
+    for sorteo in result:
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2887, in __iter__
+    return self._iter().__iter__()
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/query.py", line 2894, in _iter
+    result = self.session.execute(
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1691, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 1532, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 721, in _connection_for_bind
+    self._assert_active()
+  File "/home/vid/PHP/lotoes-server/lib/python3.8/site-packages/sqlalchemy/orm/session.py", line 601, in _assert_active
+    raise sa_exc.PendingRollbackError(
+sqlalchemy.exc.PendingRollbackError: This Session's transaction has been rolled back due to a previous exception during flush. To begin a new transaction with this Session, first issue Session.rollback(). Original exception was: (psycopg2.errors.UniqueViolation) duplicate key value violates unique constraint "loteria_nacional_combinacion_sorteo_id_key"
+DETAIL:  Key (sorteo_id)=(55) already exists.
+
+[SQL: INSERT INTO loteria_nacional_combinacion (sorteo_id, primer_premio, segundo_premio, tercer_premio, cuarto_premio, quinto_premio, fraccion, serie) VALUES (%(sorteo_id)s, %(primer_premio)s, %(segundo_premio)s, %(tercer_premio)s, %(cuarto_premio)s, %(quinto_premio)s, %(fraccion)s, %(serie)s) RETURNING loteria_nacional_combinacion.id]
+[parameters: {'sorteo_id': 55, 'primer_premio': '30274', 'segundo_premio': '48380', 'tercer_premio': None, 'cuarto_premio': None, 'quinto_premio': None, 'fraccion': None, 'serie': None}]
+(Background on this error at: https://sqlalche.me/e/14/gkpj) (Background on this error at: https://sqlalche.me/e/14/7s2a)

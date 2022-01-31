@@ -1,8 +1,8 @@
 
 from functions.get_conn import get_conn_db
 from config.data import importadores_lista
-from entities.importer import *
-
+from lotoesserver.entities.importer import *
+'''
 
 # retur a engine object
 engine = get_conn_db()
@@ -20,3 +20,4 @@ result = engine.execute(select_importers)
 
 for row in result:
     print(row)
+    '''

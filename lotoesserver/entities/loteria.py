@@ -1,5 +1,5 @@
 #!/usr/bin/python
-from api import db
+from lotoesserver import db
 
 
 class Loteria(db.Model):
